@@ -39,22 +39,7 @@ export default function MovieList() {
                         <div className="row">
 
                             {movies.map(movie => (
-                                <div className="col-4 py-3" key={movie.id}>
-                                    <div className="card">
-                                        <Link to={`/movies/${movie.id}`}>
-                                            <img className="card-img-top" src={movie.image} alt={movie.title} />
-                                        </Link>
-                                        <div className="card-body">
-                                            <h4 className="card-title">{movie.title}</h4>
-                                            <p>{movie.genre}</p>
-                                            <p>{movie.release_year}</p>
-                                            <Link to={`/movies/${movie.id}`}>
-                                                <button className="btn btn-dark">Add More</button>
-                                            </Link>
-                                        </div>
-                                    </div>
-
-                                </div>
+                                <MoviesCard key={movie.id} movie={movie} />
                             ))}
 
                         </div>
