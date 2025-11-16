@@ -13,7 +13,7 @@ export default function LayoutOutlet() {
         <>
             <AppHeader />
             <AppBody>
-                {Outlet}
+                <Outlet />
             </AppBody>
             <AppFooter />
         </>

@@ -1,10 +1,11 @@
 
 import axios from 'axios';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from '../pages/HomePage';
+import HomePage from '../pagesOutlet/HomePage';
 import LayoutOutlet from '../layout/LayoutOutlet';
-import MovieList from '../pages/MoviesList';
-import MovieDetails from '../pages/MovieDetails'
+import MovieList from '../pagesOutlet/MoviesList';
+import MovieDetails from '../pagesOutlet/MovieDetails'
+import MoviesCard from '../components/MoviesCard';
 
 
 function App() {
@@ -16,15 +17,15 @@ function App() {
         <Routes>
           <Route element={<LayoutOutlet />}>
 
-            <Route path='/' element={<HomePage />}></Route>
-            <Route path='/movies' element={<MovieList />}></Route>
-            <Route path='/movies/:id' element={<MovieDetails />}></Route>
-
+            <Route path='/' element={<HomePage />} />
+            <Route path='/movies' element={<MovieList />} />
+            <Route path='/movies/:id' element={<MovieDetails />} />
           </Route>
         </Routes>
 
 
       </BrowserRouter>
+
     </>
   )
 }
