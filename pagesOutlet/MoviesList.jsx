@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import MoviesCard from "../components/MoviesCard";
 import ComponentsMovieList from "../components/ComponentsMoviesList";
-import { Link } from "react-router-dom";
 
 //mi prendo l'endpoint del mio server
 const API_URL = "http://localhost:3000/movies";

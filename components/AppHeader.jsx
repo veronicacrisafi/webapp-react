@@ -7,7 +7,7 @@ export default function AppHeader() {
         <>
             <nav className="navbar navbar-expand bg-light border-bottom">
                 <div className="container">
-                    <span className="navbar-brand">🎬 MOVIE CINEMA 🎬 </span>
+                    <span className="navbar-brand">MOVIE CINEMA 🎬 </span>
                     <div className="navbar-nav gap-2">
                         <NavLink className="nav-link" to="/">
                             Home
