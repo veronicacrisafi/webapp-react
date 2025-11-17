@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import MoviesCard from "../components/MoviesCard";
+import ComponentsMovieList from "../components/ComponentsMoviesList";
 import { Link } from "react-router-dom";
 
 //mi prendo l'endpoint del mio server
@@ -34,21 +35,8 @@ export default function MovieList() {
                     </p>
                 </div>
 
-                <section className="mb-4">
-                    <div className="container">
-                        <div className="row">
+                <ComponentsMovieList movies={movies} />
 
-                            {movies.map(movie => (
-                                <MoviesCard key={movie.id} movie={movie} />
-                            ))}
-
-                        </div>
-
-                        <div className="text-center">
-                            <button className="btn btn-dark mt-5">Carica altri film</button>
-                        </div>
-                    </div>
-                </section>
 
             </div>
 
