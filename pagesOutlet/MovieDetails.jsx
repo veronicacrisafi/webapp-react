@@ -21,18 +21,12 @@ export default function MovieDetails() {
             })
             .catch(err => {
                 console.log(err);
-
             })
-
-
     }, [])
 
 
     return (
-
         <>
-
-
             <div className="p-5 mb-4 bg-light rounded-3">
                 <div className="container-fluid py-5 d-flex gap-4">
                     <div className="cover">
